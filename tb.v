@@ -10,6 +10,7 @@ reg rst_n = 0;
 reg start;
 reg [N-1:0] multiplier;
 reg [N-1:0] multiplicand;
+reg [2*N-1:0] expected_product;
 wire [2*N-1:0] product;
 wire ready;
 
@@ -68,7 +69,5 @@ initial begin
     $display("Testbench finalizado.");
     $finish;
 end
-
-reg [2*N-1:0] expected_product;
 
 endmodule
